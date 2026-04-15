@@ -228,6 +228,15 @@ export const siteContent = {
       image: "/images/google-dashboard/dashboard.png",
       href: "/selected-work/google-dashboard",
     },
+    {
+      slug: "spendlogic",
+      title: "SpendLogic: AI Procurement Agent",
+      label: "AI-First Development · Full-Stack",
+      description:
+        "For most Finance and Procurement teams, software spend is a 'black box' of manual processes. Identifying savings requires manually cross-referencing complex contracts against inconsistent market benchmarks, often leading to missed renewal deadlines and overpayment. I built an agentic AI solution to fix this.",
+      image: "/images/spendlogic/dashboard.png",
+      href: "/selected-work/spendlogic",
+    },
   ],
 
   playerReports: {
@@ -392,5 +401,56 @@ export const siteContent = {
       },
     ],
     finalImages: ["/images/google-dashboard/dashboard.png"],
+  },
+
+  spendLogic: {
+    title: "SpendLogic: AI Procurement Agent",
+    label: "Case Study",
+    caseTitle: "Building an AI-Native 'Risk Diagnostic' for SaaS Procurement",
+    challenge:
+      "For most Finance and Procurement teams, software spend is a 'black box' of manual processes. Identifying savings requires manually cross-referencing complex contracts against inconsistent market benchmarks, often leading to missed renewal deadlines and overpayment.",
+    role: "I built SpendLogic, a high-fidelity AI Procurement Agent that transforms the static contract review process into an actionable 'Negotiation Strategy Dashboard.' The app uses agentic AI to not only extract data but to reason against benchmark intelligence and generate immediate procurement leverage.",
+    workflowIntro: "The AI-First Development Stack:",
+    steps: [
+      {
+        number: "01",
+        tool: "Gemini",
+        title: "Planning & Architecture",
+        description:
+          "I used Gemini to draft a comprehensive plan, defining the logic for the 'Negotiation Strategy Dashboard' and outlining the data architecture for a Supabase-backed benchmark engine that compares extracted contract terms against real market pricing.",
+        images: ["/images/spendlogic/gemini-plan.png"],
+      },
+      {
+        number: "02",
+        tool: "Codex",
+        title: "Interactive Development",
+        description:
+          "I fed the plan into Codex to generate the functional backend and frontend code—iterating to build the Node/Express backend integrated with Claude 3.5 Sonnet for agentic PDF extraction, and the dynamic benchmark manager for uploading and managing pricing CSVs.",
+        images: ["/images/spendlogic/codex-assist.png"],
+      },
+      {
+        number: "03",
+        tool: "Claude Code",
+        title: "Code Review & Optimization",
+        description:
+          "I utilized Claude Code to perform an end-to-end audit of the repository. This agentic hand-off enabled automated refactoring of state management logic, improved error handling for the PDF buffer stream, and a 'finishing touches' pass that polished UI responsiveness across all breakpoints.",
+        images: ["/images/spendlogic/code-review-claude.png"],
+      },
+    ],
+    results: [
+      {
+        headline: "AI-Native Sales Motion",
+        body: "Demonstrates how AI can shift a pitch from technical to consultative—quantifying the financial risk of inaction to drive immediate confidence with finance stakeholders.",
+      },
+      {
+        headline: "10x Smarter Accuracy",
+        body: "By benchmarking against real market data, SpendLogic identifies pricing outliers with far greater precision than manual cross-referencing of contracts and spreadsheets.",
+      },
+      {
+        headline: "Zero-to-One Build",
+        body: "Moved from concept to a fully functioning AI procurement agent—complete with agentic extraction, benchmark intelligence, and an auto-generated negotiation playbook.",
+      },
+    ],
+    finalImages: ["/images/spendlogic/dashboard.png"],
   },
 };
