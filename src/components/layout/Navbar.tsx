@@ -98,7 +98,7 @@ export function Navbar() {
               href={link.href}
               className="text-sm font-medium py-2 border-b"
               style={{
-                color: "var(--navy)",
+                color: "var(--teal)",
                 borderColor: "var(--blush)",
                 fontFamily: "var(--font-public-sans)",
               }}
