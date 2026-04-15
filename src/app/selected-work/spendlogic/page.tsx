@@ -22,6 +22,7 @@ export default function SpendLogicPage() {
       steps={cs.steps}
       results={cs.results}
       finalImages={cs.finalImages}
+      finalImagesFit="contain"
       heroImage="/images/spendlogic/dashboard.png"
     />
   );
