@@ -76,7 +76,7 @@ export function MyStory() {
               itemClassName="!p-0 !h-auto !min-h-[min(88vh,700px)] !rounded-[32px]"
             >
               <div
-                className={`relative w-full rounded-[32px] overflow-hidden flex flex-col-reverse ${imageOnRight ? "md:flex-row" : "md:flex-row-reverse"}`}
+                className={`relative w-full rounded-[32px] overflow-hidden flex flex-col ${imageOnRight ? "md:flex-row" : "md:flex-row-reverse"}`}
                 style={{ minHeight: "min(88vh, 700px)", backgroundColor: "var(--navy)" }}
               >
                 {/* Text panel — vertically centered */}
@@ -183,7 +183,7 @@ export function MyStory() {
                 </div>
 
                 {/* Image panel */}
-                <div className="relative w-full h-64 md:h-auto md:w-[42%] shrink-0">
+                <div className="relative w-full h-64 order-first md:order-none md:h-auto md:w-[42%] shrink-0">
                   <Image
                     src={chapter.image}
                     alt={chapter.title}
