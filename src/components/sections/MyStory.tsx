@@ -73,11 +73,11 @@ export function MyStory() {
           return (
             <ScrollStackItem
               key={chapter.title}
-              itemClassName="!p-0 !h-auto !min-h-[min(88vh,700px)] !rounded-[32px]"
+              itemClassName="!p-0 !h-auto !min-h-0 md:!min-h-[min(88vh,700px)] !rounded-[32px]"
             >
               <div
-                className={`relative w-full rounded-[32px] overflow-hidden flex flex-col ${imageOnRight ? "md:flex-row" : "md:flex-row-reverse"}`}
-                style={{ minHeight: "min(88vh, 700px)", backgroundColor: "var(--navy)" }}
+                className={`relative w-full rounded-[32px] overflow-hidden flex flex-col md:min-h-[min(88vh,700px)] ${imageOnRight ? "md:flex-row" : "md:flex-row-reverse"}`}
+                style={{ backgroundColor: "var(--navy)" }}
               >
                 {/* Text panel — vertically centered */}
                 <div className="flex flex-col justify-center p-8 md:p-12 md:w-[58%]">
